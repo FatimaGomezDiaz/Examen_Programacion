@@ -1,6 +1,7 @@
 import pandas as pd
 
-def limpiar_datos_titanic(archivo):
+
+def limpiar_datos(archivo):
     # a. Generar un dataframe con los datos del archivo.
     df = pd.read_csv(archivo)
 
@@ -21,8 +22,9 @@ def limpiar_datos_titanic(archivo):
     # f. Retornar el DataFrame con los cambios realizados.
     return df
 
+
 archivo_titanic = '/Users/fatimagomezdiaz08/Examen_Programacion/Datasets/titanic.csv'
-titanic_limpio = limpiar_datos_titanic(archivo_titanic)
+titanic_limpio = limpiar_datos(archivo_titanic)
 
 # Guardar el DataFrame limpio
 archivo_salida = '/Users/fatimagomezdiaz08/Examen_Programacion/Datasets/titanic_limpio.csv'
